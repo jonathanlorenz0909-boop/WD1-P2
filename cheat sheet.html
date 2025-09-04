@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Information -->
+    <meta charset="UTF-8"> <!-- Character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibility for IE browsers -->
+
+    <!-- Title of the document -->
+    <title>HTML & CSS Cheatsheet</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- External CSS -->
+    <style>
+        /* Reset some default browser styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Container grid for 2 columns layout */
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* Section styling */
+        section {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Heading for each section */
+        h2 {
+            color: #007acc;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 5px;
+            font-size: 1.8rem;
+        }
+
+        /* Lists inside sections */
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* Sub-items style */
+        ul ul {
+            list-style-type: circle;
+            margin-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Code styling for tags and code blocks */
+        code {
+            background-color: #eaeaea;
+            border-radius: 4px;
+            padding: 2px 5px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #d6336c;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main container for the cheatsheet -->
+    <h1>HTML & CSS Cheatsheet</h1>
+    <p>A concise guide on HTML elements, attributes, and CSS properties.</p>
+    <div class="container">
+        <!-- HTML Section -->
+        <section>
+            <h2>HTML Elements & Attributes</h2>
+            <ul>
+                <li><code>&lt;headings&gt;</code> - Define titles and subtitles (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>)</li>
+                <li><code>&lt;paragraphs&gt;</code> - Blocks of text (<code>&lt;p&gt;</code>)</li>
+                <li><code>&lt;head&gt; / &lt;body&gt;</code> - Document structure</li>
+                <li><code>&lt;meta&gt;</code> - Metadata like charset and viewport</li>
+                <li><code>&lt;links&gt;</code> - Hyperlinks (<code>&lt;a&gt;</code>)</li>
+                <li><code>&lt;tables&gt;</code> - Tabular data (<code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>)</li>
+                <li><code>&lt;list&gt;</code> - Ordered and unordered lists (<code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>)</li>
+                <li><code>&lt;forms&gt;</code> - User input forms (<code>&lt;form&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;button&gt;</code>)</li>
+                <li>Other Attributes
+                    <ul>
+                        <li><code>page title</code> - Set inside <code>&lt;title&gt;</code></li>
+                        <li><code>favicon</code> - Small icon in the browser tab</li>
+                        <li><code>text formatting tags</code> - <code>&lt;b&gt;</code>, <code>&lt;i&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code></li>
+                        <li><code>images</code> - <code>&lt;img&gt;</code> tag for pictures</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- CSS Section -->
+        <section>
+            <h2>CSS Cheat Sheet</h2>
+            <ul>
+                <li><strong>Selectors</strong> - Target HTML elements (<code>element</code>, <code>.class</code>, <code>#id</code>)</li>
+                <li><strong>Comments</strong> - <code>/* comment */</code></li>
+                <li><strong>Colors</strong> - Named colors, HEX, RGB, HSL</li>
+                <li><strong>Measurements</strong> - <code>px</code>, <code>em</code>, <code>rem</code>, <code>%</code>, <code>vh</code>, <code>vw</code></li>
+                <li><strong>Properties & Values</strong>
+                    <ul>
+                        <li><code>background</code> - background-color, background-image</li>
+                        <li><code>border</code> - width, style, color</li>
+                        <li><code>padding & margin</code> - spacing inside and outside elements</li>
+                        <li><code>opacity</code> - transparency level</li>
+                    </ul>
+                </li>
+                <li><strong>Layout</strong>
+                    <ul>
+                        <li><code>height / width</code></li>
+                        <li><code>text & fonts</code> - font-family, size, weight</li>
+                        <li><code>icons</code></li>
+                        <li><code>list & tables</code> - styling lists and tables</li>
+                        <li><code>position, z-index, overflow</code> - control stacking and visibility</li>
+                        <li><code>float, inline, block</code></li>
+                    </ul>
+                </li>
+                <li><strong>Navigation Bar</strong> - Styling links</li>
+                <li><strong>Dropdowns</strong> - Menus that expand/collapse</li>
+                <li><strong>Image Gallery</strong> - Layout and responsive images</li>
+            </ul>
+        </section>
+    </div>
+</body>
+
+</html>
